@@ -45,28 +45,28 @@ This function is used to sort pages, the default value is to sort pages by `page
 **perPagePosts**
 - Type: `number`
 
-- default: 5
+- default: `5`
 
 This option is the count of posts which per page will show
 
 **paginationDir**
 - Type: `string`
 
-- default: page
+- default: `page`
 
 This option is the pagination path, such as `xxx.blog/page/1`, `xxx.blog/page/2`
 
 **firstPagePath**
 - Type: `string`
 
-- default: /
+- default: `/`
 
 This option is the first pagination path, equivalent to `xxx.blog/page/1`
 
 **layout**
 - Type: `string`
 
-- default: Layout
+- default: `Layout`
 
 This option is the layout wich pagination page will be used
 
@@ -84,3 +84,27 @@ module.exports = {
   }]
 }
 ```
+
+## What can you get?
+
+`Vue.computed.$pagination`: The property support pagination data
+
+`$pagination` has the below property:
+
+- `all`: All pages
+
+- `pages`: The Array of pagination
+
+- `length` The length of the `pages` property
+
+- `currentIndex`: The current page index
+
+- `posts`: The posts of the current page 
+
+- `hasPrev`: If the current post has previous post
+
+- `hashNext`: If the current post has next post
+
+- `prevLink`: The link of the previous page
+
+- `nextLink`: The link of the next page
