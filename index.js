@@ -1,4 +1,4 @@
-const { path } = require('@vuepress/shared-utils')
+const path = require('path')
 
 function getIntervallers (max, interval) {
   const count = Math.ceil(max / interval);
@@ -25,7 +25,7 @@ module.exports = (options, ctx) => ({
     })
 
     const { pages } = ctx
-    const posts = pages.filter(postsFilter)
+    const posts = pages.filter(postsFilter);
     const {
       perPagePosts = 5,
       paginationDir = 'page',
