@@ -17,5 +17,9 @@
   "homepage": "https://github.com/Yubisaki/vuepress-plugin-pagination#readme",
   "main": "index.js",
   "author": "子肃 <stickmyc@163.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "conventional-changelog-cli": "^2.0.5",
+    "release-it": "^7.6.1"
+  }
 }
