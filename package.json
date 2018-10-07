@@ -2,7 +2,8 @@
   "name": "@yubisaki/vuepress-plugin-pagination",
   "version": "0.1.6",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "description": "pagination plugin for vuepress theme yubisaki",
   "keywords": [
