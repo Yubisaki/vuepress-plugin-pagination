@@ -43,6 +43,9 @@ class Pagination {
   }
 
   get posts () {
+    if (!this._currentPage) {
+      return [];
+    }
     const [start, end] = this._currentPage.interval
     return this._posts.slice(start, end + 1)
   }
@@ -58,6 +61,9 @@ class Pagination {
   }
 
   get hasNext () {
+    if (this.length === 0) {
+      return false;
+    }
     return this.paginationIndex !== this.length - 1
   }
 
